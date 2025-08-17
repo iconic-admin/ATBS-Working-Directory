@@ -4,7 +4,24 @@ number // 2 and return this value. If number is odd, then
 collatz() should print and return 3 * number + 1."""
 
 def collatz(number):
-    print()
+    if (number % 2) == 0:
+        number = number //2
+    else:
+        number = 3 * number + 1
+    print(number, end=' ')
+    return number
+
+print('Enter number: ')
+
+while True:
+    try:
+        userNumber = int(input('>'))
+        break
+    except ValueError:
+        print('Input must be an integer value.')
+
+while userNumber != 1:
+    userNumber = collatz(userNumber)
 
 """Then, write a program that lets the user enter an
 integer and that keeps calling collatz() on that number until
