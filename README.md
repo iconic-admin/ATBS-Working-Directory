@@ -1,2 +1,2 @@
 # ATBS-Working-Directory
-My attemt at automate the boring stuff.
+My attempt at automate the boring stuff.
