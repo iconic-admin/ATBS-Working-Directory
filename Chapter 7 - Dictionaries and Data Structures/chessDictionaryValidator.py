@@ -61,7 +61,7 @@ def isValidChessBoard(boardDict):
         print('One or more pieces are on an invalid square.')
 
 # GPT 5 used to generate test board sets to test the function.
-# I later had to correct the simulated board sets from GPT
+# I later had to correct some of the simulated board sets from GPT
 # bad GPT...
 
 # Missing white king
