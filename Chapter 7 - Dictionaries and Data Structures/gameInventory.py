@@ -16,11 +16,11 @@ display_inventory(stuff)
 def add_to_inventory(inventory, added_items):
     # Your code goes here.
     # my code starts here
-    for loot in added_items:
-        if loot in inventory:
-            inventory[loot] += 1
-        else:
-            inventory[loot] = 1
+    for loot in added_items: # for every item in this list
+        if loot in inventory: # if it matches an existing item in the inventory
+            inventory[loot] += 1 # iterate that item by one
+        else:                # if it doesn't match an item in the inventory
+            inventory[loot] = 1 # add it to the inventory with an initial value of 1
     return(inventory)
     # my code stops here
 
