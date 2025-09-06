@@ -29,7 +29,15 @@ def isPhoneNumber(text):
     # if no disqaulifiers found, return True
     return True
 
-print('Is 415-555-4242 a phone number?', isPhoneNumber('415-555-4242'))
-print(isPhoneNumber('415-555-4242'))
-print('Is Moshi moshi a phone number?', isPhoneNumber('Moshi moshi'))
-print(isPhoneNumber('Moshi moshi'))
+# replaced by the next code segment
+# print('Is 415-555-4242 a phone number?', isPhoneNumber('415-555-4242'))
+# print(isPhoneNumber('415-555-4242'))
+# print('Is Moshi moshi a phone number?', isPhoneNumber('Moshi moshi'))
+# print(isPhoneNumber('Moshi moshi'))
+
+message = 'Call me at 352-553-4228 tomrrow. 214-009-2384 is my office.'
+for i in range(len(message)):
+    segment = message[i:i+12]
+    if isPhoneNumber(segment):
+        print('Phone number found: ' + segment)
+print('Done')
