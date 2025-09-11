@@ -29,4 +29,4 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['Alice', 'David', 'Samwise', 'MrMan'],
              ['dogs', 'cows', 'mice', 'goblins']]
 
-printTable(tableData)
+printTable(tableData) 
